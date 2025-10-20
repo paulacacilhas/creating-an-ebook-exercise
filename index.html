@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Varinha Interativa</title>
+<style>
+    body { font-family: Arial, sans-serif; background-color: #222; color: #fff; text-align: center; padding: 50px; }
+    button { padding: 10px 20px; margin: 10px; font-size: 16px; cursor: pointer; }
+    #mensagem { margin-top: 20px; font-size: 20px; color: #f9d342; }
+</style>
+</head>
+<body>
+
+<h1>Varinha Interativa</h1>
+<button id="lumos">Lumos</button>
+<button id="expelliarmus">Expelliarmus</button>
+<div id="mensagem">Escolha um feitiço!</div>
+
+<script>
+let feitiços = {
+    lumos: "Uma luz ilumina a ponta da varinha!",
+    expelliarmus: "Você desarma seu oponente!"
+};
+
+function lançarFeitiço(feitiço) {
+    document.getElementById("mensagem").innerText = feitiços[feitiço];
+    document.body.style.backgroundColor = feitiço === "lumos" ? "#f9f9d6" : "#222";
+}
+
+document.getElementById("lumos").addEventListener("click", function() {
+    lançarFeitiço("lumos");
+});
+
+document.getElementById("expelliarmus").addEventListener("click", function() {
+    lançarFeitiço("expelliarmus");
+});
+</script>
+
+</body>
+</html>
