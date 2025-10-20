@@ -1,5 +1,11 @@
 # ✨ Projeto EBOOK Gerado por I.A.
 
+
+<div align="center">
+  <img src="cover-illustration.png" alt="Capa do ebook" width="25%">
+</div>
+
+
 Projeto de criação de um ebook utilizando IA e PowerPoint, desenvolvido para o bootcamp "Universia - Fundamentos de IA Generativa" da plataforma DIO
 
 ## Geração da imagem de capa do ebook
